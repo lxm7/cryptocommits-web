@@ -10,7 +10,7 @@ import { toggleSortColumn, toggleSortBy } from './../../store/List/actions';
 import { addToWatchList } from '../../store/User/actions';
 import TableFooter from './Footer';
 import TableHeader from './Header';
-import TableBody from './Body';
+import TableBodyComp from './Body';
 import Paper from '@material-ui/core/Paper';
 
 class TableList extends Component {
@@ -40,7 +40,7 @@ class TableList extends Component {
             sort={sort}
           />
 
-          <TableBody
+          <TableBodyComp
             coinList={coinList}
             addToWatchList={this.props.addToWatchList}
             watchList={watchList}

@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import uuidv4 from 'uuid/v4';
 import TableCell from '@material-ui/core/TableCell';
-import Button from '@material-ui/core/Button';
 import SvgIcon from '@material-ui/core/SvgIcon';
 
 const TableHeader = ({ cellHeader, toggleSortColumn, toggleSortBy, sort }) => (

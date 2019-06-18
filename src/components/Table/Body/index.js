@@ -7,20 +7,19 @@ import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-// import ListItemIcon from '@material-ui/core/ListItemIcon';
 import uuidv4 from 'uuid/v4';
 
 import { shortCap, priceF } from '../../../helpers/formatData';
 import LastCommitCell from '../LastCommitCell';
 
 const TableBodyComponent = ({ coinList, addToWatchList, watchList }) => {
-  if (!coinList || coinList.length === 0 || !watchList || watchList.length === 0) {
+  if (!coinList || coinList.length === 0) { // !watchList || watchList.length === 0
     return null;
   }
 
   return (
     <TableBody>
-      {coinList && coinList
+      {coinList
         .map((coin) => (
           <TableRow
             key={uuidv4()}
